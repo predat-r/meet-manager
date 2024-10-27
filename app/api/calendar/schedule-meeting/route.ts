@@ -1,5 +1,3 @@
-
-
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -42,7 +40,7 @@ export async function POST(req: Request) {
 
   try {
     const response = await fetch(
-      `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events`,
+      `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?conferenceDataVersion=1`,
       {
         method: "POST",
         headers: {
