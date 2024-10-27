@@ -34,6 +34,10 @@ export async function POST(req: Request) {
         },
       },
     },
+    //privatizing the call 
+    guestsCanModify: false,
+    guestsCanInviteOthers: false,
+    guestsCanSeeOtherGuests: false,
   };
 
   const calendarId = "primary"; // 'primary' for the primary calendar
